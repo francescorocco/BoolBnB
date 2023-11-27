@@ -32,7 +32,7 @@ class ApartmentsTableSeeder extends Seeder
             ],
 
             [
-                "user_id"       => 2,
+                "user_id"       => 1,
                 "name"          => "Roma",
                 "rooms"         => "8",
                 "beds"          => "12",
@@ -107,7 +107,7 @@ class ApartmentsTableSeeder extends Seeder
             ],
 
             [
-                "user_id"       => 7,
+                "user_id"       => 4,
                 "name"          => "Palermo",
                 "rooms"         => "10",
                 "beds"          => "5",
@@ -122,7 +122,7 @@ class ApartmentsTableSeeder extends Seeder
             ],
 
             [
-                "user_id"       => 8,
+                "user_id"       => 2,
                 "name"          => "Mazara",
                 "rooms"         => "5",
                 "beds"          => "3",
@@ -137,7 +137,7 @@ class ApartmentsTableSeeder extends Seeder
             ],
 
             [
-                "user_id"       => 9,
+                "user_id"       => 4,
                 "name"          => "Genova",
                 "rooms"         => "2",
                 "beds"          => "2",
@@ -152,7 +152,7 @@ class ApartmentsTableSeeder extends Seeder
             ],
 
             [
-                "user_id"       => 10,
+                "user_id"       => 3,
                 "name"          => "Napoli",
                 "rooms"         => "5",
                 "beds"          => "3",
