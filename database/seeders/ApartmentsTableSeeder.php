@@ -16,7 +16,7 @@ class ApartmentsTableSeeder extends Seeder
     public function run()
     {
         // Camere all'interno del sito
-        $apartements = [
+        $apartments = [
             [
                 "user_id"       => 1,
                 "name"          => "Milano",
@@ -166,7 +166,7 @@ class ApartmentsTableSeeder extends Seeder
                 "visible"       => 0,
 
             ],
-        ]
+        ];
         
         foreach ($apartments as $apartment) {
             //creare riga nel DB
