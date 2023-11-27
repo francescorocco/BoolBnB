@@ -107,7 +107,7 @@ class ApartmentsTableSeeder extends Seeder
             ],
 
             [
-                "user_id"       => 7,
+                "user_id"       => 3,
                 "name"          => "",
                 "rooms"         => "",
                 "beds"          => "",

@@ -25,6 +25,12 @@ return new class extends Migration
             $table->decimal('lon', 11, 8)->nullable();
             $table->string('photo', 255)->nullable();
             $table->boolean('visible')->default(1);
+            $table->unsignedBigInteger('user_id');
+
+            $table->foreign('user_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade');
             $table->timestamps();
         });
     }
