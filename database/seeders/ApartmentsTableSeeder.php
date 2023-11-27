@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Apartment;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ApartmentsTableSeeder extends Seeder
 {
@@ -15,156 +16,55 @@ class ApartmentsTableSeeder extends Seeder
     public function run()
     {
         // Camere all'interno del sito
-        $apartements = [
+        $apartments = [
             [
-                "user_id"       => 1,
-                "name"          => "Milano",
-                "rooms"         => "4",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "100",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "si",
-
+                "user_id"      => 1,
+                "name"         => "Milano",
+                "rooms"        => 4,
+                "beds"         => 8,
+                "bathrooms"    => 2,
+                "mq"           => 100,
+                "address"      => "c/da villetto 21",
+                "lat"          => "",
+                "lon"          => "",
+                "photo"        => "",
+                "visible"      => "si",
             ],
 
             [
-                "user_id"       => 2,
-                "name"          => "Roma",
-                "rooms"         => "8",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
+                "user_id"      => 2,
+                "name"         => "Roma",
+                "rooms"        => 8,
+                "beds"         => 12,
+                "bathrooms"    => 3,
+                "mq"           => 150,
+                "address"      => "c/da saponara 11",
+                "lat"          => "",
+                "lon"          => "",
+                "photo"        => "",
+                "visible"      => "si",
             ],
+
+
 
             [
-                "user_id"       => 3,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
+                "user_id"      => 10,
+                "name"         => "Napoli",
+                "rooms"        => 5,
+                "beds"         => 3,
+                "bathrooms"    => 2,
+                "mq"           => 80,
+                "address"      => "via maradona 10",
+                "lat"          => "",
+                "lon"          => "",
+                "photo"        => "",
+                "visible"      => "si",
             ],
+        ];
 
-            [
-                "user_id"       => 4,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-
-            [
-                "user_id"       => 5,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-
-            [
-                "user_id"       => 6,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-
-            [
-                "user_id"       => 3,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-
-            [
-                "user_id"       => 8,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-
-            [
-                "user_id"       => 9,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-
-            [
-                "user_id"       => 10,
-                "name"          => "",
-                "rooms"         => "",
-                "beds"          => "",
-                "bathrooms"     => "",
-                "mq"            => "",
-                "address"       => "",
-                "lat"           => "",
-                "lon"           => "",
-                "photo"         => "",
-                "visible"       => "",
-
-            ],
-        ]
+        foreach ($apartments as $apartment) {
+            //creare riga nel DB
+            Apartment::create($apartment);
+        }
     }
 }
