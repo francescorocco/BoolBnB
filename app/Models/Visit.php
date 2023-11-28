@@ -10,7 +10,9 @@ class Visit extends Model
     use HasFactory;
 
     protected $fillable = [
+        'apartment_id',
         'id',
         'date',
+        'text',
     ];
 }
