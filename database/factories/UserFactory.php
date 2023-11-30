@@ -22,7 +22,7 @@ class UserFactory extends Factory
         return [
             'name'  =>  $firstName,
             'lastname'  =>  $lastName,
-            'email' =>  strtolower($firstName . '.' . $lastName . 'test.com'),
+            'email' =>  strtolower($firstName . '.' . $lastName . '@test.com'),
             'password'  =>  bcrypt('asdfasdf'),
         ];
     }
