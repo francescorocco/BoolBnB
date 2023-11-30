@@ -2,19 +2,15 @@
 
 namespace Database\Factories;
 
+use App\Models\Message;
 use App\Models\Apartment;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
- */
+
 class MessageFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+
+    protected $model = Message::class;
     public function definition()
     {
         return [
