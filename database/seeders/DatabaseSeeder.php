@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             VisitsTableSeeder::class,
             MessagesTableSeeder::class,
             ServicesTableSeeder::class,
+            SponsorshipTableSeeder::class
 
 
 
