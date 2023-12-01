@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Sponsorship;
+use Database\Factories\SponsorshipFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,6 +16,12 @@ class SponsorshipTableSeeder extends Seeder
      */
     public function run()
     {
-        Sponsorship::Factory()->count(5)->create();
+        foreach (SponsorshipFactory::$data as $sponsorshipData) {
+            Sponsorship::create([
+                'name' => $sponsorshipData['name'],
+                'price' => $sponsorshipData['price'],
+                'duration' => $sponsorshipData['duration'],
+            ]);
+        }
     }
 }

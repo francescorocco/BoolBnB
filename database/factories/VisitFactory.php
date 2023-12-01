@@ -17,7 +17,6 @@ class VisitFactory extends Factory
             'apartment_id' => $this->faker->randomElement(Apartment::pluck('id')),
             'ip'    => $this->faker->ipv6,
             'date'  => $this->faker->date,
-            'text'  => $this->faker->text,
         ];
     }
 }

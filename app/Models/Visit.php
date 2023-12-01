@@ -13,6 +13,5 @@ class Visit extends Model
         'apartment_id',
         'id',
         'date',
-        'text',
     ];
 }
