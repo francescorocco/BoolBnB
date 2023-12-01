@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Message extends Model
 {
+    public function Apartments()
+    {
+        return $this->belongsToMany(Apartment::class);
+    }
+
+
+
     use HasFactory;
 
     protected $fillable = [

@@ -2,11 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Apartment;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Visit extends Model
 {
+
+    public function apartments()
+    {
+        return $this->belongsToMany(Apartment::class);
+    }
+
+
     use HasFactory;
 
     protected $fillable = [

@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sponsorship extends Model
 {
-    use HasFactory;
+    public function apartments()
+    {
+        return $this->belongsToMany('App\Models\Apartment');
+    }
 
-    protected $fillable = [
-        'name',
-        'price',
-        'duration',
-    ];
+
+
+
+    use HasFactory;
 }
